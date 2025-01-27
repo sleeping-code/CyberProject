@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMF Steps</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #1e1e1e;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #1e1e1e;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h2 {
+            font-size: 36px;
+            margin: 0 0 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero-text .btn {
+            background-color: #a369ff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero-text .btn:hover {
+            background-color: #e05697;
+        }
+
+        .hero-image {
+            max-width: 40%;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>RMF STEPS</h1>
+            <nav>
+                <a href="step1.html">Dashboard</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+                <a href="#">Steps Explanation</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>We Provide Cyber Security Solution!</h2>
+                <p>Get started today to secure your digital infrastructure.</p>
+                <button class="btn" onclick="goToPreviousPage()">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/400x300.png?text=Lock+Icon" alt="Cyber Security Lock">
+            </div>
+        </section>
+    </main>
+    <script>
+         function goToPreviousPage() {
+          window.location.href = "step1.html";
+        }
+    </script>
+</body>
+</html>
