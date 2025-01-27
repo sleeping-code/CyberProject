@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 5: Assess Security Controls</title>
+  <link rel="stylesheet" href="UI.CSS">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="sidebar-title">RMF Steps</h2>
+      <ul class="steps-list">
+        <li class="step">Step 1: Prepare</li>
+        <li class="step">Step 2: Categorize Information System</li>
+        <li class="step">Step 3: Select Security Controls</li>
+        <li class="step">Step 4: Implement Security Controls</li>
+        <li class="step active">Step 5: Assess Security Controls</li>
+        <li class="step disabled">Step 6: Authorize the System</li>
+        <li class="step disabled">Step 7: Monitor Security Controls</li>
+        <li class="step disabled">Step 8: Review System</li>
+        <li class="step disabled">Step 9: Update Documentation</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <header class="header">
+        <h1>Step 5: Assess Security Controls</h1>
+      </header>
+      <div class="step-content">
+        <form id="step5-form" action="step6.html" method="POST" onsubmit="return validateForm()">
+            <label for="assessment-report">Upload Assessment Report:</label>
+            <input type="file" id="assessment-report" name="assessment-report" required />
+            <div class="navigation-buttons">
+              <button type="button" class="button" onclick="goToPreviousPage()">Previous</button>
+              <button type="submit" class="button">Next</button>
+            </div>
+          </form>
+          <script>
+            function goToPreviousPage() {
+              window.location.href = "step4.html";
+            }
+            function validateForm() {
+              const file = document.getElementById("assessment-report").files[0];
+              if (!file) {
+                alert("Please upload the assessment report before proceeding.");
+                return false;
+              }
+              return true;
+            }
+          </script>
+          
+  <script>
+    function validateForm() {
+      const notes = document.getElementById("assessment-notes").value.trim();
+      if (!notes) {
+        alert("Please provide assessment notes before proceeding.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
