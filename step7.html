@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 7: Monitor Security Controls</title>
+  <link rel="stylesheet" href="UI.CSS">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2 class="sidebar-title">RMF Steps</h2>
+      <ul class="steps-list">
+        <li class="step">Step 1: Prepare</li>
+        <li class="step">Step 2: Categorize Information System</li>
+        <li class="step">Step 3: Select Security Controls</li>
+        <li class="step">Step 4: Implement Security Controls</li>
+        <li class="step">Step 5: Assess Security Controls</li>
+        <li class="step">Step 6: Authorize the System</li>
+        <li class="step active">Step 7: Monitor Security Controls</li>
+        <li class="step disabled">Step 8: Review System</li>
+        <li class="step disabled">Step 9: Update Documentation</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <header class="header">
+        <h1>Step 7: Monitor Security Controls</h1>
+      </header>
+      <div class="step-content">
+        <form id="step7-form" action="step8.html" method="POST" onsubmit="return validateForm()">
+            <label for="monitoring-strategy">Monitoring Strategy:</label>
+            <textarea id="monitoring-strategy" name="monitoring-strategy" required></textarea>
+            <div class="navigation-buttons">
+              <button type="button" class="button" onclick="goToPreviousPage()">Previous</button>
+              <button type="submit" class="button">Next</button>
+            </div>
+          </form>
+          <script>
+            function goToPreviousPage() {
+              window.location.href = "step6.html";
+            }
+            function validateForm() {
+              const strategy = document.getElementById("monitoring-strategy").value.trim();
+              if (!strategy) {
+                alert("Please provide a monitoring strategy before proceeding.");
+                return false;
+              }
+              return true;
+            }
+          </script>
+          
+  <script>
+    function validateForm() {
+      const notes = document.getElementById("monitoring-notes").value.trim();
+      if (!notes) {
+        alert("Please provide monitoring notes before proceeding.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
