@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step 2: Categorize Information System</title>
+  <link rel="stylesheet" href="UI.CSS">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">RMF Steps</h2>
+      <ul class="steps-list">
+        <li class="step">Step 1: Prepare</li>
+        <li class="step active">Step 2: Categorize Information System</li>
+        <li class="step disabled">Step 3: Select Security Controls</li>
+        <li class="step disabled">Step 4: Implement Security Controls</li>
+        <li class="step disabled">Step 5: Assess Security Controls</li>
+        <li class="step disabled">Step 6: Authorize the System</li>
+        <li class="step disabled">Step 7: Monitor Security Controls</li>
+        <li class="step disabled">Step 8: Review System</li>
+        <li class="step disabled">Step 9: Update Documentation</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <header class="header">
+        <h1>Step 2: Categorize Information System</h1>
+      </header>
+      <form id="step2-form" action="step3.html" method="POST" onsubmit="return validateForm()">
+        <label for="system-name">System Name:</label>
+        <input type="text" id="system-name" name="system-name" required />
+        <br />
+        <label for="info-category">Information Category:</label>
+        <select id="info-category" name="info-category" required>
+          <option value="">Select...</option>
+          <option value="High">High</option>
+          <option value="Moderate">Moderate</option>
+          <option value="Low">Low</option>
+        </select>
+        <div class="navigation-buttons">
+          <button type="button" class="button" onclick="goToPreviousPage()">Previous</button>
+          <button type="submit" class="button">Next</button>
+        </div>
+      </form>
+      <script>
+        function goToPreviousPage() {
+          window.location.href = "step1.html";
+        }
+        function validateForm() {
+          const systemName = document.getElementById("system-name").value.trim();
+          const category = document.getElementById("info-category").value;
+          if (!systemName || !category) {
+            alert("Please complete all required fields before proceeding.");
+            return false;
+          }
+          return true;
+        }
+      </script>
+      
+  <script>
+    function validateForm() {
+      const systemName = document.getElementById("system-name").value.trim();
+      const category = document.getElementById("info-category").value;
+      if (!systemName || !category) {
+        alert("Please complete all required fields before proceeding.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
