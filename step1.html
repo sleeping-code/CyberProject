@@ -3,38 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Step 1: Prepare</title>
-  <link rel="stylesheet" href="UI.CSS">
+  <title>Step 1: System Characterization</title>
+  <link href="UI.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <aside class="sidebar">
-      <h2 class="sidebar-title">RMF Steps</h2>
-      <ul class="steps-list">
-        <li class="step active">Step 1: Prepare</li>
-        <li class="step disabled">Step 2: Categorize Information System</li>
-        <li class="step disabled">Step 3: Select Security Controls</li>
-        <li class="step disabled">Step 4: Implement Security Controls</li>
-        <li class="step disabled">Step 5: Assess Security Controls</li>
-        <li class="step disabled">Step 6: Authorize the System</li>
-        <li class="step disabled">Step 7: Monitor Security Controls</li>
-        <li class="step disabled">Step 8: Review System</li>
-        <li class="step disabled">Step 9: Update Documentation</li>
+<body class="m-0 font-sans bg-gray-900 text-white flex h-screen">
+  <div class="flex w-full">
+    <aside class="w-1/5 bg-indigo-900 p-5">
+      <h2 class="text-center text-lg mb-5">RMF Steps</h2>
+      <ul class="list-none p-0">
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 1: Prepare</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 2: Categorize Information System</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 3: Select Security Controls</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 4: Implement Security Controls</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 5: Assess Security Controls</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 6: Authorize the System</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 7: Monitor Security Controls</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 8: Review System</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 9: Update Documentation</li>
       </ul>
     </aside>
     
-    <main class="content">
-      <header class="header">
-        <h1>Step 1: Prepare</h1>
+    <main class="w-4/5 p-5">
+      <header class="flex justify-between items-center mb-5">
+        <h1 class="text-xl">Step 1: Prepare</h1>
       </header>
       <div class="step-content">
         <form id="step1-form" action="step2.html" method="POST" onsubmit="return validateForm()">
-          <label for="preparation-notes">Preparation Notes:</label>
-          <textarea id="preparation-notes" name="preparation-notes" required></textarea>
-          <div class="navigation-buttons">
-            <button type="submit" class="button">Next</button>
+          <label for="preparation-notes" class="block mb-2">Preparation Notes:</label>
+          <textarea id="preparation-notes" name="preparation-notes" required class="w-full p-2 mb-5 border rounded text-black"></textarea>
+          <div class="flex justify-between mt-5">
+            <button type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded">Next</button>
           </div>
         </form>
+        
       </div>
     </main>
   </div>

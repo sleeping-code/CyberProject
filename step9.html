@@ -4,48 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Step 9: Update Documentation</title>
-  <link rel="stylesheet" href="UI.CSS">
+  <link href="UI.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container">
-    <aside class="sidebar">
-      <h2 class="sidebar-title">RMF Steps</h2>
-      <ul class="steps-list">
-        <li class="step">Step 1: Prepare</li>
-        <li class="step">Step 2: Categorize Information System</li>
-        <li class="step">Step 3: Select Security Controls</li>
-        <li class="step">Step 4: Implement Security Controls</li>
-        <li class="step">Step 5: Assess Security Controls</li>
-        <li class="step">Step 6: Authorize the System</li>
-        <li class="step">Step 7: Monitor Security Controls</li>
-        <li class="step">Step 8: Review System</li>
-        <li class="step active">Step 9: Update Documentation</li>
+<body class="m-0 font-sans bg-gray-900 text-white flex h-screen">
+  <div class="flex w-full">
+    <aside class="w-1/5 bg-indigo-900 p-5">
+      <h2 class="text-center text-lg mb-5">RMF Steps</h2>
+      <ul class="list-none p-0">
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 1: Prepare</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 2: Categorize Information System</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 3: Select Security Controls</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 4: Implement Security Controls</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 5: Assess Security Controls</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 6: Authorize the System</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 7: Monitor Security Controls</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 8: Review System</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 9: Update Documentation</li>
       </ul>
     </aside>
 
-    <main class="content">
-      <header class="header">
-        <h1>Step 9: Update Documentation</h1>
+    <main class="w-4/5 p-5">
+      <header class="flex justify-between items-center mb-5">
+        <h1 class="text-xl">Step 9: Update Documentation</h1>
       </header>
       <form id="step9-form" action="thx.html" method="POST" onsubmit="return validateForm()">
-        <p>Finalize and update all required system documentation.</p>
-        <label for="documentation-notes">Documentation Notes:</label>
-        <textarea id="documentation-notes" name="documentation-notes" required></textarea>
-        <div class="navigation-buttons">
-          <button type="submit" class="button">Finish</button>
+        <p class="mb-5">Finalize and update all required system documentation.</p>
+        <label for="documentation-notes" class="block mb-2">Documentation Notes:</label>
+        <textarea id="documentation-notes" name="documentation-notes" required class="w-full p-2 mb-5 border rounded"></textarea>
+        
+        <div class="flex justify-end">
+          <button type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded">Finish</button>
         </div>
       </form>
-      <script>
-        function validateForm() {
-          const notes = document.getElementById("documentation-notes").value.trim();
-          if (!notes) {
-            alert("Please provide documentation notes before proceeding.");
-            return false;
-          }
-          return true;
-        }
-      </script>
-      
+    </main>
+  </div>
+
   <script>
     function validateForm() {
       const notes = document.getElementById("documentation-notes").value.trim();
