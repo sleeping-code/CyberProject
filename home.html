@@ -4,111 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMF Steps</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: white;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #1e1e1e;
-        }
-
-        .navbar h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 16px;
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 50px;
-            background-color: #1e1e1e;
-        }
-
-        .hero-text {
-            max-width: 50%;
-        }
-
-        .hero-text h2 {
-            font-size: 36px;
-            margin: 0 0 20px;
-        }
-
-        .hero-text p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .hero-text .btn {
-            background-color: #a369ff;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .hero-text .btn:hover {
-            background-color: #e05697;
-        }
-
-        .hero-image {
-            max-width: 40%;
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="navbar">
-            <h1>RMF STEPS</h1>
+<body class="bg-gray-900 text-white flex flex-col min-h-screen">
+    <header class="bg-gray-800">
+        <div class="flex justify-between items-center p-5">
+            <h1 class="text-2xl">RMF STEPS</h1>
             <nav>
-                <a href="step1.html">Dashboard</a>
-                <a href="#">Contact Us</a>
-                <a href="#">About Us</a>
-                <a href="#">Steps Explanation</a>
+                <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
+                <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
+                <a href="#" class="text-white hover:underline ml-5">About Us</a>
+                <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
             </nav>
         </div>
     </header>
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h2>We Provide Cyber Security Solution!</h2>
-                <p>Get started today to secure your digital infrastructure.</p>
-                <button class="btn" onclick="goToPreviousPage()">Get Started</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <main class="flex-grow min-h-[calc(100vh-300px)]"> 
+        <section class="flex justify-between items-center p-10 max-w-full mx-auto">
+            <div class="flex-1 max-w-3xl">
+                <h2 class="text-4xl mb-5">We Provide Cyber Security Solution!</h2>
+                <p class="text-lg mb-10">Get started today to secure your digital infrastructure. This is an important step to ensure your data is protected from breaches and vulnerabilities.</p>
+                <button class="bg-purple-600 text-white py-3 px-6 rounded hover:bg-pink-500" onclick="goToPreviousPage()">Get Started</button>
             </div>
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/400x300.png?text=Lock+Icon" alt="Cyber Security Lock">
+            <div class="max-w-md">
+                <img src="https://via.placeholder.com/400x300.png?text=Lock+Icon" alt="Cyber Security Lock" class="w-full h-auto">
             </div>
-        </section>
     </main>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="bg-green-600 p-8"> 
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl mb-5">Why Cybersecurity Matters</h3>
+            <p class="mb-5">In today's digital age, cybersecurity is critical to protect sensitive information from unauthorized access, ensuring the safety of both personal and business data.</p>
+            <button class="bg-purple-600 text-white py-3 px-6 rounded hover:bg-pink-500" onclick="goToPreviousPage()">Learn More</button>
+        </div>
+    </section>
+    
+    
+    <footer class="bg-gray-800 p-10 mt-0"> 
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl mb-5">Stay Connected</h3>
+            <p class="mb-5">Follow us on social media for the latest updates and news.</p>
+            <div class="flex justify-center mb-5">
+                <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
+                <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
+                <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
+                <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
+            </div>
+            <p class="mb-5">© 2023 RMF Steps. All rights reserved.</p>
+            <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
+        </div>
+    </footer>
+    
     <script>
-         function goToPreviousPage() {
-          window.location.href = "step1.html";
+        function goToPreviousPage() {
+            window.location.href = "step1.html";
         }
     </script>
 </body>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
   <title>Report</title>
   <link rel="stylesheet" href="UI.CSS">
 </head>
@@ -26,26 +27,84 @@
     <main class="content">
       <header class="header">
         <h1>Report</h1>
+=======
+  <title>Step 9: Update Documentation</title>
+  <link href="UI.css" rel="stylesheet">
+</head>
+<body class="m-0 font-sans bg-gray-900 text-white flex flex-col h-screen">
+  <header>
+    <div class="flex justify-between items-center p-5 bg-gray-800">
+      <h1 class="text-2xl">RMF STEPS</h1>
+      <nav>
+          <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
+          <a href="home.html" class="text-white hover:underline ml-5">Home Page</a>
+          <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
+          <a href="#" class="text-white hover:underline ml-5">About Us</a>
+          <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="flex w-full flex-grow">
+    <aside class="w-1/5 bg-indigo-900 p-5">
+      <h2 class="text-center text-lg mb-5">RMF Steps</h2>
+      <ul class="list-none p-0">
+        <br>
+        <br>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 1: Prepare</li>
+        <br>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 2: Categorize</li>
+        <br>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 3: Select Security Controls</li>
+        <br>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 4: Implement Security Controls</li>
+        <br>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 5: Assess Security Controls</li>
+        <br>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 6: Authorize the System</li>
+        <br>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 7: Monitor Security Controls</li>
+        <br>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 8: Review System</li>
+        <br>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 9: Update Documentation</li>
+        <br>
+        <br>
+      </ul>
+    </aside>
+
+    <main class="w-4/5 p-5">
+      <header class="flex justify-between items-center mb-5">
+        <h1 class="text-xl">Step 9: Update Documentation</h1>
+>>>>>>> upstream/main
       </header>
-      <form id="step9-form" action="thx.html" method="POST" onsubmit="return validateForm()">
-        <p>Finalize and update all required system documentation.</p>
-        <label for="documentation-notes">Documentation Notes:</label>
-        <textarea id="documentation-notes" name="documentation-notes" required></textarea>
-        <div class="navigation-buttons">
-          <button type="submit" class="button">Finish</button>
+      <form id="step9-form" action="result.html" method="POST" onsubmit="return validateForm()">
+        <p class="mb-5">Finalize and update all required system documentation.</p>
+        <label for="documentation-notes" class="block mb-2">Documentation Notes:</label>
+        <textarea id="documentation-notes" name="documentation-notes" required class="w-full p-2 mb-5 border rounded"></textarea>
+        
+        <div class="flex justify-end">
+          <button type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded">Finish</button>
         </div>
       </form>
-      <script>
-        function validateForm() {
-          const notes = document.getElementById("documentation-notes").value.trim();
-          if (!notes) {
-            alert("Please provide documentation notes before proceeding.");
-            return false;
-          }
-          return true;
-        }
-      </script>
-      
+    </main>
+  </div>
+
+  <footer class="bg-gray-800 p-10 mt-0"> 
+    <div class="container mx-auto text-center">
+        <h3 class="text-2xl mb-5">Stay Connected</h3>
+        <p class="mb-5">Follow us on social media for the latest updates and news.</p>
+        <div class="flex justify-center mb-5">
+            <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
+            <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
+            <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
+            <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
+        </div>
+        <p class="mb-5">© 2023 RMF Steps. All rights reserved.</p>
+        <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
+    </div>
+</footer>
+
   <script>
     function validateForm() {
       const notes = document.getElementById("documentation-notes").value.trim();
