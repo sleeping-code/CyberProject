@@ -3,32 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-  <title>Impact Analysis</title>
-  <link rel="stylesheet" href="UI.CSS">
-</head>
-<body>
-  <div class="container">
-    <aside class="sidebar">
-      <h2 class="sidebar-title">RMF Steps</h2>
-      <ul class="steps-list">
-        <li class="step">Step 1: System Characterization</li>
-        <li class="step active">Step 2: Threat Identification</li>
-        <li class="step disabled">Step 3: Vulnerability Identification</li>
-        <li class="step disabled">Step 4: Control Analysis</li>
-        <li class="step disabled">Step 5: Likelihood Determination</li>
-        <li class="step disabled">Step 6: Impact Analysis/li>
-        <li class="step disabled">Step 7: Risk Determination</li>
-        <li class="step disabled">Step 8: Control Recommendations </li>
-        <li class="step disabled">Step 9: Report</li>
-      </ul>
-    </aside>
-
-    <main class="content">
-      <header class="header">
-        <h1>Impact Analysis</h1>
-=======
-  <title>Step 6: Authorize the System</title>
+  <title>Step 6: Impact Analysis</title>
   <link href="UI.css" rel="stylesheet">
 </head>
 <body class="m-0 font-sans bg-gray-900 text-white flex flex-col h-screen">
@@ -36,11 +11,11 @@
     <div class="flex justify-between items-center p-5 bg-gray-800">
       <h1 class="text-2xl">RMF STEPS</h1>
       <nav>
-          <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
-          <a href="home.html" class="text-white hover:underline ml-5">Home Page</a>
-          <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
-          <a href="#" class="text-white hover:underline ml-5">About Us</a>
-          <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
+        <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
+        <a href="home.html" class="text-white hover:underline ml-5">Home Page</a>
+        <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
+        <a href="#" class="text-white hover:underline ml-5">About Us</a>
+        <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
       </nav>
     </div>
   </header>
@@ -49,77 +24,197 @@
     <aside class="w-1/5 bg-indigo-900 p-5">
       <h2 class="text-center text-lg mb-5">RMF Steps</h2>
       <ul class="list-none p-0">
-        <br>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 1: Prepare</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 2: Categorize</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 3: Select Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 4: Implement Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 5: Assess Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 6: Authorize the System</li>
-        <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 7: Review</li>
-        <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 8: Maintain</li>
-        <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 9: Finalize</li>
-        <br>
-        <br>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">System Characterization</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Threat Identification</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Vulnerability Identification</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Control Analysis</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Likelihood Determination</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Impact Analysis</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Risk Determination</li>
+      
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Control Recommendations</li>
+      
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Results</li>
       </ul>
     </aside>
 
     <main class="w-4/5 p-5">
       <header class="flex justify-between items-center mb-5">
-        <h1 class="text-xl">Step 6: Authorize the System</h1>
->>>>>>> upstream/main
+        <h1 class="text-xl">Step 6: Impact Analysis</h1>
       </header>
-      <div class="step-content">
-        <form id="step6-form" action="step7.html" method="POST" onsubmit="return validateForm()">
-          <label for="authorization-notes" class="block mb-2">Authorization Notes:</label>
-          <textarea id="authorization-notes" name="authorization-notes" required class="w-full p-2 mb-5 border rounded"></textarea>
-          
-          <div class="flex justify-between">
-            <button type="button" class="bg-indigo-600 text-white py-2 px-4 rounded" onclick="goToPreviousPage()">Previous</button>
-            <button type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded">Next</button>
+
+      <form id="step6-form" class="space-y-6" onsubmit="return validateForm()">
+       
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">1. Mission Impact Analysis</h3>
+          <select id="mission-impact" class="w-full p-2 border rounded text-black" required>
+            <option value="">Select Mission Impact Level</option>
+            <option value="5">Critical</option>
+            <option value="4">High</option>
+            <option value="3">Medium</option>
+            <option value="2">Low</option>
+          </select>
+        </div>
+
+       
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">2. Asset Criticality Assessment</h3>
+          <div class="space-y-4">
+            <select multiple id="assets" class="w-full p-2 border rounded text-black h-32">
+              <option value="aws">AWS Servers</option>
+              <option value="postgresql">PostgreSQL DB</option>
+              <option value="firewall">Firewall</option>
+            </select>
+            <div class="space-y-2">
+              <label class="block">Criticality Rating:</label>
+              <input type="range" min="1" max="5" value="3" 
+                     class="w-full bg-gray-700 rounded-lg" id="asset-criticality">
+              <div class="flex justify-between text-sm">
+                <span>Low</span>
+                <span>Medium</span>
+                <span>High</span>
+                <span>Critical</span>
+              </div>
+            </div>
           </div>
-        </form>
-      </div>
+        </div>
+
+       
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">3. Data Criticality</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <label class="flex items-center space-x-2">
+                <input type="checkbox" class="rounded text-indigo-600" value="pii">
+                <span>PII</span>
+              </label>
+              <input type="range" min="1" max="5" value="3" 
+                     class="w-full bg-gray-700 rounded-lg">
+            </div>
+            <!-- Add other data types similarly -->
+          </div>
+        </div>
+
+        <!-- Data Sensitivity -->
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">4. Data Sensitivity</h3>
+          <select id="data-sensitivity" class="w-full p-2 border rounded text-black" required>
+            <option value="">Select Sensitivity Level</option>
+            <option value="1">Public</option>
+            <option value="2">Internal</option>
+            <option value="3">Confidential</option>
+            <option value="4">Secret</option>
+          </select>
+        </div>
+
+        <!-- Impact Output -->
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">Impact Rating</h3>
+          <div id="impact-score" class="text-2xl font-bold text-center p-4 rounded-lg mb-4 bg-green-600">
+            3.0 - Medium
+          </div>
+          
+          <!-- Gauge Visualization -->
+          <div class="gauge h-4 bg-gray-700 rounded-full overflow-hidden flex mb-4">
+            <div class="gauge-segment bg-green-500 transition-all duration-300" style="flex: 40%"></div>
+            <div class="gauge-segment bg-yellow-500 transition-all duration-300" style="flex: 30%"></div>
+            <div class="gauge-segment bg-red-500 transition-all duration-300" style="flex: 30%"></div>
+          </div>
+
+          
+          <div class="grid grid-cols-4 gap-4 text-sm">
+            <div class="p-2 bg-gray-700 rounded text-center">
+              <div>Mission Impact</div>
+              <div class="font-bold">40%</div>
+            </div>
+            <!-- Add other contributions similarly -->
+          </div>
+        </div>
+
+        <div class="flex justify-between mt-6">
+          <button type="button" onclick="window.location.href='step5.html'" 
+                  class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-500">
+            Previous
+          </button>
+          <button type="submit" 
+                  class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-500">
+            Next
+          </button>
+        </div>
+      </form>
     </main>
   </div>
-  <footer class="bg-gray-800 p-10 mt-0"> 
-    <div class="container mx-auto text-center">
-        <h3 class="text-2xl mb-5">Stay Connected</h3>
-        <p class="mb-5">Follow us on social media for the latest updates and news.</p>
-        <div class="flex justify-center mb-5">
-            <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
-            <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
-            <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
-            <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
-        </div>
-        <p class="mb-5">© 2023 RMF Steps. All rights reserved.</p>
-        <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
-    </div>
-</footer>
 
+  <footer class="bg-gray-800 p-10 mt-0">
+    <div class="container mx-auto text-center">
+      <h3 class="text-2xl mb-5">Stay Connected</h3>
+      <p class="mb-5">Follow us on social media for the latest updates and news.</p>
+      <div class="flex justify-center mb-5">
+        <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
+        <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
+        <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
+        <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
+      </div>
+      <p class="mb-5">© 2025 Group 2. All rights reserved.</p>
+      <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
+    </div>
+  </footer>
 
   <script>
-    function goToPreviousPage() {
-      window.location.href = "step5.html";
+    // Impact Calculation Logic
+    function calculateImpact() {
+      const missionImpact = parseFloat(document.getElementById('mission-impact').value) || 0;
+      const assetCriticality = parseFloat(document.getElementById('asset-criticality').value) || 0;
+      const dataSensitivity = parseFloat(document.getElementById('data-sensitivity').value) || 0;
+
+      // Weighted calculation
+      const totalImpact = 
+        (missionImpact * 0.4) + 
+        (assetCriticality * 0.3) + 
+        (dataSensitivity * 0.3);
+
+      updateImpactDisplay(totalImpact);
     }
-    
-    function validateForm() {
-      const notes = document.getElementById("authorization-notes").value.trim();
-      if (!notes) {
-        alert("Please provide authorization notes before proceeding.");
-        return false;
+
+    function updateImpactDisplay(score) {
+      const impactElement = document.getElementById('impact-score');
+      let colorClass = 'bg-green-600';
+      let category = 'Low';
+
+      if (score >= 4) {
+        colorClass = 'bg-red-600';
+        category = 'Critical';
+      } else if (score >= 3) {
+        colorClass = 'bg-yellow-600';
+        category = 'High';
+      } else if (score >= 2) {
+        colorClass = 'bg-blue-600';
+        category = 'Medium';
       }
+
+      impactElement.textContent = `${score.toFixed(1)} - ${category}`;
+      impactElement.className = `text-2xl font-bold text-center p-4 rounded-lg mb-4 ${colorClass}`;
+
+      // Update gauge
+      const percentage = (score / 5) * 100;
+      const gaugeSegments = document.querySelectorAll('.gauge-segment');
+      gaugeSegments[0].style.flex = `${Math.max(0, Math.min(40, percentage))}%`;
+      gaugeSegments[1].style.flex = `${Math.max(0, Math.min(30, percentage - 40))}%`;
+      gaugeSegments[2].style.flex = `${Math.max(0, percentage - 70)}%`;
+    }
+
+    function validateForm() {
+      // Add validation logic for all required fields
       return true;
     }
+
+    // Event Listeners
+    document.querySelectorAll('input, select').forEach(element => {
+      element.addEventListener('change', calculateImpact);
+    });
+
+    // Initial calculation
+    calculateImpact();
   </script>
 </body>
 </html>
