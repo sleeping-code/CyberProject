@@ -3,32 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-  <title>Control Recommendations </title>
-  <link rel="stylesheet" href="UI.CSS">
-</head>
-<body>
-  <div class="container">
-    <aside class="sidebar">
-      <h2 class="sidebar-title">RMF Steps</h2>
-      <ul class="steps-list">
-        <li class="step">Step 1: System Characterization</li>
-        <li class="step active">Step 2: Threat Identification</li>
-        <li class="step disabled">Step 3: Vulnerability Identification</li>
-        <li class="step disabled">Step 4: Control Analysis</li>
-        <li class="step disabled">Step 5: Likelihood Determination</li>
-        <li class="step disabled">Step 6: Impact Analysis/li>
-        <li class="step disabled">Step 7: Risk Determination</li>
-        <li class="step disabled">Step 8: Control Recommendations </li>
-        <li class="step disabled">Step 9: Report</li>
-      </ul>
-    </aside>
-
-    <main class="content">
-      <header class="header">
-        <h1>Control Recommendations </h1>
-=======
-  <title>Step 8: Review System</title>
+  <title>Step 8: Control Recommendations</title>
   <link href="UI.css" rel="stylesheet">
 </head>
 <body class="m-0 font-sans bg-gray-900 text-white flex flex-col h-screen">
@@ -36,11 +11,11 @@
     <div class="flex justify-between items-center p-5 bg-gray-800">
       <h1 class="text-2xl">RMF STEPS</h1>
       <nav>
-          <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
-          <a href="home.html" class="text-white hover:underline ml-5">Home Page</a>
-          <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
-          <a href="#" class="text-white hover:underline ml-5">About Us</a>
-          <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
+        <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
+        <a href="home.html" class="text-white hover:underline ml-5">Home Page</a>
+        <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
+        <a href="#" class="text-white hover:underline ml-5">About Us</a>
+        <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
       </nav>
     </div>
   </header>
@@ -49,77 +24,189 @@
     <aside class="w-1/5 bg-indigo-900 p-5">
       <h2 class="text-center text-lg mb-5">RMF Steps</h2>
       <ul class="list-none p-0">
-        <br>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 1: Prepare</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 2: Categorize</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 3: Select Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 4: Implement Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 5: Assess Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 6: Authorize the System</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 7: Monitor Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 8: Review System</li>
-        <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 9: Finalize</li>
-        <br>
-        <br>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">System Characterization</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Threat Identification</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Vulnerability Identification</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Control Analysis</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Likelihood Determination</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Impact Analysis</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Risk Determination</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Control Recommendations</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Results</li>
       </ul>
     </aside>
 
     <main class="w-4/5 p-5">
       <header class="flex justify-between items-center mb-5">
-        <h1 class="text-xl">Step 8: Review System</h1>
->>>>>>> upstream/main
+        <h1 class="text-xl">Step 8: Control Recommendations</h1>
       </header>
-      <div class="step-content">
-        <form id="step8-form" action="step9.html" method="POST" onsubmit="return validateForm()">
-          <label for="update-notes" class="block mb-2">Update Notes:</label>
-          <textarea id="update-notes" name="update-notes" required class="w-full p-2 mb-5 border rounded"></textarea>
-          
-          <div class="flex justify-between">
-            <button type="button" class="bg-indigo-600 text-white py-2 px-4 rounded" onclick="goToPreviousPage()">Previous</button>
-            <button type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded">Next</button>
-          </div>
-        </form>
+
+      <div class="space-y-6">
+        
+        <div class="flex space-x-4">
+          <button onclick="exportCSV()" 
+                  class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-500">
+            Export CSV
+          </button>
+          <button onclick="exportPDF()" 
+                  class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-500">
+            Export PDF
+          </button>
+        </div>
+
+       
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <table class="w-full">
+            <thead class="bg-gray-700">
+              <tr>
+                <th class="p-2 text-left cursor-pointer" onclick="sortTable('name')">Control Name</th>
+                <th class="p-2 text-left">Type</th>
+                <th class="p-2 text-left">Category</th>
+                <th class="p-2 text-left cursor-pointer" onclick="sortTable('priority')">Priority</th>
+                <th class="p-2 text-left">Linked Risks</th>
+                <th class="p-2 text-left">Justification</th>
+              </tr>
+            </thead>
+            <tbody id="recommendations-body" class="text-sm"></tbody>
+          </table>
+        </div>
+
+        
+        <div id="control-details" class="bg-gray-800 p-4 rounded-lg hidden">
+          <h3 class="text-lg font-semibold mb-3">Control Details</h3>
+          <div id="details-content" class="space-y-2"></div>
+        </div>
+
+        
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" id="review-confirm" 
+                   class="rounded text-indigo-600" required>
+            <span>I have reviewed and approved the recommended controls</span>
+          </label>
+        </div>
+
+        <div class="flex justify-between">
+          <button type="button" onclick="window.location.href='step7.html'" 
+                  class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-500">
+            Previous
+          </button>
+          <button type="button" onclick="submitRecommendations()" 
+                  class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-500">
+            Next
+          </button>
+        </div>
       </div>
     </main>
   </div>
 
-  <footer class="bg-gray-800 p-10 mt-0"> 
+  <footer class="bg-gray-800 p-10 mt-0">
     <div class="container mx-auto text-center">
-        <h3 class="text-2xl mb-5">Stay Connected</h3>
-        <p class="mb-5">Follow us on social media for the latest updates and news.</p>
-        <div class="flex justify-center mb-5">
-            <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
-            <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
-            <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
-            <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
-        </div>
-        <p class="mb-5">© 2023 RMF Steps. All rights reserved.</p>
-        <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
+      <h3 class="text-2xl mb-5">Stay Connected</h3>
+      <p class="mb-5">Follow us on social media for the latest updates and news.</p>
+      <div class="flex justify-center mb-5">
+        <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
+        <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
+        <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
+        <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
+      </div>
+      <p class="mb-5">© 2025 Group 2. All rights reserved.</p>
+      <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
     </div>
-</footer>
+  </footer>
 
   <script>
-    function goToPreviousPage() {
-      window.location.href = "step7.html";
-    }
-    
-    function validateForm() {
-      const notes = document.getElementById("update-notes").value.trim();
-      if (!notes) {
-        alert("Please provide update notes before proceeding.");
-        return false;
+    // Sample data - replace with actual recommendations
+    const recommendations = [
+      {
+        name: "Implement MFA",
+        type: "Technical",
+        category: "Authentication",
+        priority: "High",
+        risks: "Phishing (Critical Risk)",
+        justification: "Mitigates unauthorized access",
+        details: "Requires integration with existing IAM system"
+      },
+      {
+        name: "Patch Apache Servers",
+        type: "Technical",
+        category: "Patching",
+        priority: "Critical",
+        risks: "Log4j RCE (Critical Risk)",
+        justification: "Addresses CVE-2023-1234 vulnerability",
+        details: "Critical security update from Apache Foundation"
       }
-      return true;
+    ];
+
+    function populateTable() {
+      const tbody = document.getElementById('recommendations-body');
+      tbody.innerHTML = recommendations.map((rec, index) => `
+        <tr class="hover:bg-gray-700 cursor-pointer ${getPriorityClass(rec.priority)}" 
+            onclick="showDetails(${index})">
+          <td class="p-2">${rec.name}</td>
+          <td class="p-2">${rec.type}</td>
+          <td class="p-2">${rec.category}</td>
+          <td class="p-2">${rec.priority}</td>
+          <td class="p-2">${rec.risks}</td>
+          <td class="p-2">${rec.justification}</td>
+        </tr>
+      `).join('');
     }
+
+    function getPriorityClass(priority) {
+      return {
+        'Critical': 'border-l-4 border-red-500',
+        'High': 'border-l-4 border-orange-500',
+        'Medium': 'border-l-4 border-yellow-500',
+        'Low': 'border-l-4 border-green-500'
+      }[priority] || '';
+    }
+
+    function showDetails(index) {
+      const detailsPanel = document.getElementById('control-details');
+      const content = document.getElementById('details-content');
+      const rec = recommendations[index];
+      
+      content.innerHTML = `
+        <h4 class="text-lg font-semibold">${rec.name}</h4>
+        <p><strong>Implementation Steps:</strong></p>
+        <ul class="list-disc list-inside">
+          <li>${rec.details}</li>
+          <li>Estimated cost: $${(index + 1) * 5000}</li>
+        </ul>
+      `;
+      detailsPanel.classList.remove('hidden');
+    }
+
+    function sortTable(field) {
+      recommendations.sort((a, b) => {
+        if (field === 'priority') {
+          const priorityOrder = { Critical: 0, High: 1, Medium: 2, Low: 3 };
+          return priorityOrder[a.priority] - priorityOrder[b.priority];
+        }
+        return a[field].localeCompare(b[field]);
+      });
+      populateTable();
+    }
+
+    function exportCSV() {
+      alert('CSV export functionality would go here');
+    }
+
+    function exportPDF() {
+      alert('PDF export functionality would go here');
+    }
+
+    function submitRecommendations() {
+      if (!document.getElementById('review-confirm').checked) {
+        alert('Please confirm review of recommendations');
+        return;
+      }
+      window.location.href = 'step9.html';
+    }
+
+    // Initialize table
+    populateTable();
   </script>
 </body>
 </html>

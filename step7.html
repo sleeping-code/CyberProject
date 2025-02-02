@@ -3,32 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-  <title>Risk Determination</title>
-  <link rel="stylesheet" href="UI.CSS">
-</head>
-<body>
-  <div class="container">
-    <aside class="sidebar">
-      <h2 class="sidebar-title">RMF Steps</h2>
-      <ul class="steps-list">
-        <li class="step">Step 1: System Characterization</li>
-        <li class="step active">Step 2: Threat Identification</li>
-        <li class="step disabled">Step 3: Vulnerability Identification</li>
-        <li class="step disabled">Step 4: Control Analysis</li>
-        <li class="step disabled">Step 5: Likelihood Determination</li>
-        <li class="step disabled">Step 6: Impact Analysis/li>
-        <li class="step disabled">Step 7: Risk Determination</li>
-        <li class="step disabled">Step 8: Control Recommendations </li>
-        <li class="step disabled">Step 9: Report</li>
-      </ul>
-    </aside>
-
-    <main class="content">
-      <header class="header">
-        <h1>Risk Determination</h1>
-=======
-  <title>Step 7: Monitor Security Controls</title>
+  <title>Step 7: Risk Determination</title>
   <link href="UI.css" rel="stylesheet">
 </head>
 <body class="m-0 font-sans bg-gray-900 text-white flex flex-col h-screen">
@@ -36,11 +11,11 @@
     <div class="flex justify-between items-center p-5 bg-gray-800">
       <h1 class="text-2xl">RMF STEPS</h1>
       <nav>
-          <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
-          <a href="home.html" class="text-white hover:underline ml-5">Home Page</a>
-          <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
-          <a href="#" class="text-white hover:underline ml-5">About Us</a>
-          <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
+        <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
+        <a href="home.html" class="text-white hover:underline ml-5">Home Page</a>
+        <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
+        <a href="#" class="text-white hover:underline ml-5">About Us</a>
+        <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
       </nav>
     </div>
   </header>
@@ -49,78 +24,222 @@
     <aside class="w-1/5 bg-indigo-900 p-5">
       <h2 class="text-center text-lg mb-5">RMF Steps</h2>
       <ul class="list-none p-0">
-        <br>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 1: Prepare</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 2: Categorize</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 3: Select Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 4: Implement Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 5: Assess Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 6: Authorize the System</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 7: Monitor Security Controls</li>
-        <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 8: Review</li>
-        <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 9: Finalize</li>
-        <br> 
-        <br>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">System Characterization</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Threat Identification</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Vulnerability Identification</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Control Analysis</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Likelihood Determination</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Impact Analysis</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Risk Determination</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Control Recommendations</li>
+      
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Results</li>
       </ul>
     </aside>
 
     <main class="w-4/5 p-5">
       <header class="flex justify-between items-center mb-5">
-        <h1 class="text-xl">Step 7: Monitor Security Controls</h1>
->>>>>>> upstream/main
+        <h1 class="text-xl">Step 7: Risk Determination</h1>
       </header>
-      <div class="step-content">
-        <form id="step7-form" action="step8.html" method="POST" onsubmit="return validateForm()">
-          <label for="monitoring-strategy" class="block mb-2">Monitoring Strategy:</label>
-          <textarea id="monitoring-strategy" name="monitoring-strategy" required class="w-full p-2 mb-5 border rounded"></textarea>
-          
-          <div class="flex justify-between">
-            <button type="button" class="bg-indigo-600 text-white py-2 px-4 rounded" onclick="goToPreviousPage()">Previous</button>
-            <button type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded">Next</button>
+
+      <form id="risk-form" class="space-y-6" onsubmit="return validateForm()">
+        <!-- Auto-filled Data -->
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">Risk Factors</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <h4>Likelihood:</h4>
+              <span id="likelihood-display" class="text-indigo-400">High (4/5)</span>
+            </div>
+            <div>
+              <h4>Impact:</h4>
+              <span id="impact-display" class="text-red-400">Critical (5/5)</span>
+            </div>
           </div>
-        </form>
-      </div>
+        </div>
+
+        <!-- Controls Section -->
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">Current Controls</h3>
+          <select multiple id="controls-list" 
+                  class="w-full p-2 border rounded text-black h-32">
+            <option value="4">Firewall (4/5 effectiveness)</option>
+            <option value="3">Encryption (3/5 effectiveness)</option>
+            <option value="5">Access Controls (5/5 effectiveness)</option>
+          </select>
+        </div>
+
+        <!-- Control Gaps -->
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">Control Gaps</h3>
+          <textarea id="gaps" class="w-full p-2 border rounded text-black"
+                    placeholder="Describe control gaps..." rows="3" required></textarea>
+        </div>
+
+        <!-- Risk Matrix -->
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">Risk Matrix</h3>
+          <div class="grid grid-cols-5 gap-px bg-gray-600">
+            <div class="bg-gray-700 p-2 text-center"></div>
+            <div class="bg-gray-700 p-2 text-center">Low</div>
+            <div class="bg-gray-700 p-2 text-center">Medium</div>
+            <div class="bg-gray-700 p-2 text-center">High</div>
+            <div class="bg-gray-700 p-2 text-center">Critical</div>
+            
+            <div class="bg-gray-700 p-2 text-center">Low</div>
+            <div class="bg-green-600 p-2 text-center">Low</div>
+            <div class="bg-green-600 p-2 text-center">Low</div>
+            <div class="bg-yellow-600 p-2 text-center">Medium</div>
+            <div class="bg-orange-600 p-2 text-center">High</div>
+            
+            <div class="bg-gray-700 p-2 text-center">Medium</div>
+            <div class="bg-green-600 p-2 text-center">Low</div>
+            <div class="bg-yellow-600 p-2 text-center">Medium</div>
+            <div class="bg-orange-600 p-2 text-center">High</div>
+            <div class="bg-red-600 p-2 text-center">Critical</div>
+            
+            <div class="bg-gray-700 p-2 text-center">High</div>
+            <div class="bg-yellow-600 p-2 text-center">Medium</div>
+            <div class="bg-orange-600 p-2 text-center">High</div>
+            <div class="bg-red-600 p-2 text-center">Critical</div>
+            <div class="bg-red-600 p-2 text-center">Critical</div>
+          </div>
+        </div>
+
+        <!-- Risk Display -->
+        <div id="risk-level" class="bg-red-600 text-xl font-bold text-center p-4 rounded-lg">
+          Risk Level: Critical 🔴
+        </div>
+
+        <!-- Risks Table -->
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h3 class="text-lg font-semibold mb-3">Identified Risks</h3>
+          <table class="w-full">
+            <thead class="bg-gray-700">
+              <tr>
+                <th class="p-2 text-left">Risk ID</th>
+                <th class="p-2 text-left">Description</th>
+                <th class="p-2 text-left">Likelihood</th>
+                <th class="p-2 text-left">Impact</th>
+                <th class="p-2 text-left">Risk Level</th>
+                <th class="p-2 text-left">Control Gaps</th>
+              </tr>
+            </thead>
+            <tbody id="risks-body" class="text-sm"></tbody>
+          </table>
+        </div>
+
+        <div class="flex justify-between mt-6">
+          <button type="button" onclick="window.location.href='step6.html'" 
+                  class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-500">
+            Previous
+          </button>
+          <button type="submit" 
+                  class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-500">
+            Next
+          </button>
+        </div>
+      </form>
     </main>
   </div>
 
-  <footer class="bg-gray-800 p-10 mt-0"> 
+  <footer class="bg-gray-800 p-10 mt-0">
     <div class="container mx-auto text-center">
-        <h3 class="text-2xl mb-5">Stay Connected</h3>
-        <p class="mb-5">Follow us on social media for the latest updates and news.</p>
-        <div class="flex justify-center mb-5">
-            <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
-            <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
-            <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
-            <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
-        </div>
-        <p class="mb-5">© 2023 RMF Steps. All rights reserved.</p>
-        <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
+      <h3 class="text-2xl mb-5">Stay Connected</h3>
+      <p class="mb-5">Follow us on social media for the latest updates and news.</p>
+      <div class="flex justify-center mb-5">
+        <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
+        <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
+        <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
+        <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
+      </div>
+      <p class="mb-5">© 2025 Group 2. All rights reserved.</p>
+      <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
     </div>
-</footer>
-
+  </footer>
 
   <script>
-    function goToPreviousPage() {
-      window.location.href = "step6.html";
+    // Simulated data from previous steps
+    const risks = [
+      {
+        id: 1,
+        description: "Phishing targeting admin accounts",
+        likelihood: "High",
+        impact: "High",
+        gaps: "No MFA for admin accounts",
+        level: "High"
+      },
+      {
+        id: 2,
+        description: "Log4j RCE on Apache servers",
+        likelihood: "High",
+        impact: "Critical",
+        gaps: "Unpatched servers",
+        level: "Critical"
+      }
+    ];
+
+    function updateRiskDisplay() {
+      const riskLevel = calculateRiskLevel();
+      const riskDisplay = document.getElementById('risk-level');
+      riskDisplay.className = `text-xl font-bold text-center p-4 rounded-lg ${
+        riskLevel === 'Critical' ? 'bg-red-600' :
+        riskLevel === 'High' ? 'bg-orange-600' :
+        riskLevel === 'Medium' ? 'bg-yellow-600' : 'bg-green-600'
+      }`;
+      riskDisplay.innerHTML = `Risk Level: ${riskLevel} ${getRiskIcon(riskLevel)}`;
+      
+      populateRisksTable();
     }
-    
+
+    function calculateRiskLevel() {
+      // Simplified calculation
+      const likelihood = document.getElementById('likelihood-display').textContent;
+      const impact = document.getElementById('impact-display').textContent;
+      
+      if (likelihood.includes('High') && impact.includes('Critical')) return 'Critical';
+      if (likelihood.includes('Medium') && impact.includes('High')) return 'High';
+      return 'Medium';
+    }
+
+    function getRiskIcon(level) {
+      const icons = {'Critical':'🔴','High':'🟠','Medium':'🟡','Low':'🟢'};
+      return icons[level] || '';
+    }
+
+    function populateRisksTable() {
+      const tbody = document.getElementById('risks-body');
+      tbody.innerHTML = risks.map(risk => `
+        <tr class="hover:bg-gray-700">
+          <td class="p-2">${risk.id}</td>
+          <td class="p-2">${risk.description}</td>
+          <td class="p-2">${risk.likelihood}</td>
+          <td class="p-2">${risk.impact}</td>
+          <td class="p-2">
+            <span class="px-2 py-1 rounded ${
+              risk.level === 'Critical' ? 'bg-red-600' :
+              risk.level === 'High' ? 'bg-orange-600' :
+              risk.level === 'Medium' ? 'bg-yellow-600' : 'bg-green-600'
+            }">
+              ${risk.level}
+            </span>
+          </td>
+          <td class="p-2">${risk.gaps}</td>
+        </tr>
+      `).join('');
+    }
+
     function validateForm() {
-      const strategy = document.getElementById("monitoring-strategy").value.trim();
-      if (!strategy) {
-        alert("Please provide a monitoring strategy before proceeding.");
+      const gaps = document.getElementById('gaps').value.trim();
+      if (!gaps) {
+        alert('Please describe control gaps before proceeding');
         return false;
       }
       return true;
     }
+
+    // Initial setup
+    updateRiskDisplay();
   </script>
 </body>
 </html>
