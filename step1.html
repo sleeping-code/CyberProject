@@ -27,23 +27,23 @@
       <ul class="list-none p-0">
         <br>
         <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 1: Prepare</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">System Characterization</li>
         <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 2: Assess</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Threat Identification</li>
         <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 3: Implement</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Vulnerability Identification</li>
         <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 4: Monitor</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Control Analysis</li>
         <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 5: Review</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Likelihood Determination</li>
         <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 6: Maintain</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Impact Analysis</li>
         <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 7: Update</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Risk Determination</li>
         <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 8: Communicate</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Control Recommendations</li>
         <br>
-        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Step 9: Finalize</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-not-allowed">Results</li>
         <br>
         <br>
       </ul>
@@ -55,25 +55,37 @@
       </header>
       <div class="step-content">
         <form id="step1-form" action="step2.html" method="POST" onsubmit="return validateForm()">
-          <!-- Dropdown 1: Hardware -->
+          
           <label for="hardware" class="block mb-2">Hardware:</label>
           <select id="hardware" name="hardware" required class="w-full p-2 mb-5 border rounded text-black">
             <option value="" disabled selected>Select a hardware type</option>
             <option value="computer">Computer</option>
             <option value="server">Server</option>
             <option value="router">Router</option>
+
           </select>
 
-          <!-- Dropdown 2: Software -->
+
+         
           <label for="software" class="block mb-2">Software:</label>
           <select id="software" name="software" required class="w-full p-2 mb-5 border rounded text-black">
             <option value="" disabled selected>Select a software type</option>
-            <option value="os">Operating System</option>
+            <option value="os">Windows</option>
+            <option value="os">IOS</option>
             <option value="database">Database</option>
             <option value="application">Application</option>
+            <option value="web">Web Server</option>
+            <option value="database">Database Server</option>
+            <option value="file">File Server</option>
+            <option value="mysql">MySQL</option>
+            <option value="postgresql">PostgreSQL</option>
+            <option value="connectivityissues">Connectivity Issues</option>
+            <option value="slowinternetspeed">Slow Internet Speed</option>
+
           </select>
 
-          <!-- NEW: Dropdown 3: System Interface -->
+      
+          
           <label for="system-interface" class="block mb-2">System Interface:</label>
           <select id="system-interface" name="system-interface" required class="w-full p-2 mb-5 border rounded text-black">
             <option value="" disabled selected>Select an interface type</option>
@@ -83,7 +95,7 @@
             <option value="ui">User Interface (Web/Mobile)</option>
           </select>
 
-          <!-- Dropdown 4: Storage -->
+          
           <label for="data-info" class="block mb-2">Data and Information:</label>
         <select id="data-info" name="data-info" required class="w-full p-2 mb-5 border rounded text-black">
           <option value="" disabled selected>Select data type</option>
@@ -94,7 +106,7 @@
           <option value="public">Public Data</option>
         </select>
 
-          <!-- Dropdown 5: Security -->
+          
           <label for="people" class="block mb-2">People:</label>
           <select id="people" name="people" required class="w-full p-2 mb-5 border rounded text-black">
             <option value="" disabled selected>Select a role</option>
@@ -107,7 +119,7 @@
             <option value="guest">Guest</option>
           </select>
 
-          <!-- Dropdown 6: Users -->
+          
           <form action="#" method="post">
             <label for="systemmission">System Mission:</label><br>
             <textarea id="systemmission" name="systemmission" rows="4" cols="50" placeholder="Describe the system’s primary function (e.g., 'Process e-commerce transactions')"></textarea><br><br>
@@ -115,9 +127,9 @@
           <label for="systemmission" class="block mb-2">System Mission:</label>
           <select id="systemmission" name="systemmission" required class="w-full p-2 mb-5 border rounded text-black">
             <option value="" disabled selected>Select criticality level</option>
-            <option value="admin">Low</option>
-            <option value="employee">Medium</option>
-            <option value="guest">High</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
           </select>
 
           <div class="flex justify-end mt-5">
@@ -138,7 +150,7 @@
             <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
             <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
         </div>
-        <p class="mb-5">© 2023 RMF Steps. All rights reserved.</p>
+        <p class="mb-5">© 2025  Group 2. All rights reserved.</p>
         <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
     </div>
   </footer>
@@ -151,6 +163,7 @@
       const storage = document.getElementById("Data and Information").value;
       const security = document.getElementById("People").value;
       const users = document.getElementById("System Mission").value;
+      
 
       if (!hardware || !software || !systemInterface || !storage || !security || !users) {
         alert("Please fill out all dropdown menus before proceeding.");
