@@ -3,32 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-  <title>Report</title>
-  <link rel="stylesheet" href="UI.CSS">
-</head>
-<body>
-  <div class="container">
-    <aside class="sidebar">
-      <h2 class="sidebar-title">RMF Steps</h2>
-      <ul class="steps-list">
-        <li class="step">Step 1: System Characterization</li>
-        <li class="step active">Step 2: Threat Identification</li>
-        <li class="step disabled">Step 3: Vulnerability Identification</li>
-        <li class="step disabled">Step 4: Control Analysis</li>
-        <li class="step disabled">Step 5: Likelihood Determination</li>
-        <li class="step disabled">Step 6: Impact Analysis/li>
-        <li class="step disabled">Step 7: Risk Determination</li>
-        <li class="step disabled">Step 8: Control Recommendations </li>
-        <li class="step disabled">Step 9: Report</li>
-      </ul>
-    </aside>
-
-    <main class="content">
-      <header class="header">
-        <h1>Report</h1>
-=======
-  <title>Step 9: Update Documentation</title>
+  <title>Step 9: Results Documentation</title>
   <link href="UI.css" rel="stylesheet">
 </head>
 <body class="m-0 font-sans bg-gray-900 text-white flex flex-col h-screen">
@@ -36,11 +11,11 @@
     <div class="flex justify-between items-center p-5 bg-gray-800">
       <h1 class="text-2xl">RMF STEPS</h1>
       <nav>
-          <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
-          <a href="home.html" class="text-white hover:underline ml-5">Home Page</a>
-          <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
-          <a href="#" class="text-white hover:underline ml-5">About Us</a>
-          <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
+        <a href="step1.html" class="text-white hover:underline ml-5">Dashboard</a>
+        <a href="home.html" class="text-white hover:underline ml-5">Home Page</a>
+        <a href="#" class="text-white hover:underline ml-5">Contact Us</a>
+        <a href="#" class="text-white hover:underline ml-5">About Us</a>
+        <a href="#" class="text-white hover:underline ml-5">Steps Explanation</a>
       </nav>
     </div>
   </header>
@@ -49,71 +24,223 @@
     <aside class="w-1/5 bg-indigo-900 p-5">
       <h2 class="text-center text-lg mb-5">RMF Steps</h2>
       <ul class="list-none p-0">
-        <br>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 1: Prepare</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 2: Categorize</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 3: Select Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 4: Implement Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 5: Assess Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 6: Authorize the System</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 7: Monitor Security Controls</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 8: Review System</li>
-        <br>
-        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Step 9: Update Documentation</li>
-        <br>
-        <br>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">System Characterization</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Threat Identification</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Vulnerability Identification</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Control Analysis</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Likelihood Determination</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Impact Analysis</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Risk Determination</li>
+        <li class="bg-indigo-600 opacity-50 p-2 mb-2 text-center cursor-pointer">Control Recommendations</li>
+        <li class="bg-indigo-700 p-2 mb-2 text-center cursor-pointer">Results Documentation</li>
       </ul>
     </aside>
 
     <main class="w-4/5 p-5">
       <header class="flex justify-between items-center mb-5">
-        <h1 class="text-xl">Step 9: Update Documentation</h1>
->>>>>>> upstream/main
+        <h1 class="text-xl">Step 9: Results Documentation</h1>
       </header>
-      <form id="step9-form" action="result.html" method="POST" onsubmit="return validateForm()">
-        <p class="mb-5">Finalize and update all required system documentation.</p>
-        <label for="documentation-notes" class="block mb-2">Documentation Notes:</label>
-        <textarea id="documentation-notes" name="documentation-notes" required class="w-full p-2 mb-5 border rounded"></textarea>
-        
-        <div class="flex justify-end">
-          <button type="submit" class="bg-indigo-600 text-white py-2 px-4 rounded">Finish</button>
+
+      <!-- Report Generator -->
+      <div class="space-y-6">
+        <!-- Export Options -->
+        <div class="flex space-x-4">
+          <button onclick="exportPDF()" 
+                  class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-500">
+            Export PDF
+          </button>
+          <button onclick="exportCSV()" 
+                  class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-500">
+            Export CSV
+          </button>
         </div>
-      </form>
+
+        <!-- Report Sections -->
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <h2 class="text-xl font-semibold mb-4">Risk Assessment Report</h2>
+
+          <!-- Executive Summary -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">1. Executive Summary</h3>
+            <textarea id="executive-summary" class="w-full p-2 border rounded text-black"
+                      placeholder="Provide a high-level overview of the assessment..." rows="4"></textarea>
+          </div>
+
+          <!-- System Characterization -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">2. System Characterization</h3>
+            <div id="system-characterization" class="text-sm"></div>
+          </div>
+
+          <!-- Threat Identification -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">3. Threat Identification</h3>
+            <div id="threat-identification" class="text-sm"></div>
+          </div>
+
+          <!-- Vulnerability Identification -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">4. Vulnerability Identification</h3>
+            <div id="vulnerability-identification" class="text-sm"></div>
+          </div>
+
+          <!-- Control Analysis -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">5. Control Analysis</h3>
+            <div id="control-analysis" class="text-sm"></div>
+          </div>
+
+          <!-- Likelihood Determination -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">6. Likelihood Determination</h3>
+            <div id="likelihood-determination" class="text-sm"></div>
+          </div>
+
+          <!-- Impact Analysis -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">7. Impact Analysis</h3>
+            <div id="impact-analysis" class="text-sm"></div>
+          </div>
+
+          <!-- Risk Determination -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">8. Risk Determination</h3>
+            <div id="risk-determination" class="text-sm"></div>
+          </div>
+
+          <!-- Control Recommendations -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">9. Control Recommendations</h3>
+            <div id="control-recommendations" class="text-sm"></div>
+          </div>
+
+          <!-- Appendices -->
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold mb-2">10. Appendices</h3>
+            <div id="appendices" class="text-sm">
+              <p>Supporting data, charts, and logs will be included here.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between">
+          <button type="button" onclick="window.location.href='step8.html'" 
+                  class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-500">
+            Previous
+          </button>
+          <button type="button" onclick="submitReport()" 
+                  class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-500">
+            Finish
+          </button>
+        </div>
+      </div>
     </main>
   </div>
 
-  <footer class="bg-gray-800 p-10 mt-0"> 
+  <footer class="bg-gray-800 p-10 mt-0">
     <div class="container mx-auto text-center">
-        <h3 class="text-2xl mb-5">Stay Connected</h3>
-        <p class="mb-5">Follow us on social media for the latest updates and news.</p>
-        <div class="flex justify-center mb-5">
-            <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
-            <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
-            <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
-            <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
-        </div>
-        <p class="mb-5">© 2023 RMF Steps. All rights reserved.</p>
-        <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
+      <h3 class="text-2xl mb-5">Stay Connected</h3>
+      <p class="mb-5">Follow us on social media for the latest updates and news.</p>
+      <div class="flex justify-center mb-5">
+        <a href="#" class="text-white mx-3 hover:underline">Facebook</a>
+        <a href="#" class="text-white mx-3 hover:underline">Twitter</a>
+        <a href="#" class="text-white mx-3 hover:underline">LinkedIn</a>
+        <a href="#" class="text-white mx-3 hover:underline">Instagram</a>
+      </div>
+      <p class="mb-5">© 2025 Group 2. All rights reserved.</p>
+      <p>For inquiries, please contact us at <a href="mailto:#" class="text-purple-500 hover:underline">kelompok2@gmail.com</a></p>
     </div>
-</footer>
+  </footer>
 
   <script>
-    function validateForm() {
-      const notes = document.getElementById("documentation-notes").value.trim();
-      if (!notes) {
-        alert("Please provide documentation notes before finishing.");
-        return false;
-      }
-      return true;
+    // Simulated data from previous steps
+    const reportData = {
+      systemCharacterization: {
+        hardware: "Web servers (Apache), Firewall (Cisco ASA)",
+        software: "Windows Server 2022, PostgreSQL 15",
+        interfaces: "REST API (HTTPS), Internal LAN",
+        dataCriticality: "Customer PII: Critical",
+        mission: "E-commerce platform (High criticality)"
+      },
+      threats: [
+        { source: "External", motivation: "Financial gain", capacity: "High" }
+      ],
+      vulnerabilities: [
+        { name: "Unpatched Apache servers", severity: "Critical" }
+      ],
+      controls: {
+        current: [
+          { name: "Firewall rules", effectiveness: "4/5" }
+        ],
+        planned: [
+          { name: "Implement MFA", priority: "High" }
+        ]
+      },
+      likelihood: "High (4/5)",
+      impact: "Critical (5/5)",
+      risks: [
+        { description: "Phishing targeting admin accounts", level: "Critical" }
+      ],
+      recommendations: [
+        { name: "Patch Apache servers", justification: "Address CVE-2023-1234" }
+      ]
+    };
+
+    function populateReport() {
+      document.getElementById('system-characterization').innerHTML = `
+        <p><strong>Hardware:</strong> ${reportData.systemCharacterization.hardware}</p>
+        <p><strong>Software:</strong> ${reportData.systemCharacterization.software}</p>
+        <p><strong>Interfaces:</strong> ${reportData.systemCharacterization.interfaces}</p>
+        <p><strong>Data Criticality:</strong> ${reportData.systemCharacterization.dataCriticality}</p>
+        <p><strong>Mission:</strong> ${reportData.systemCharacterization.mission}</p>
+      `;
+
+      document.getElementById('threat-identification').innerHTML = reportData.threats.map(threat => `
+        <p><strong>Source:</strong> ${threat.source}, <strong>Motivation:</strong> ${threat.motivation}, <strong>Capacity:</strong> ${threat.capacity}</p>
+      `).join('');
+
+      document.getElementById('vulnerability-identification').innerHTML = reportData.vulnerabilities.map(vuln => `
+        <p><strong>Vulnerability:</strong> ${vuln.name}, <strong>Severity:</strong> ${vuln.severity}</p>
+      `).join('');
+
+      document.getElementById('control-analysis').innerHTML = `
+        <p><strong>Current Controls:</strong> ${reportData.controls.current.map(c => c.name).join(', ')}</p>
+        <p><strong>Planned Controls:</strong> ${reportData.controls.planned.map(c => c.name).join(', ')}</p>
+      `;
+
+      document.getElementById('likelihood-determination').innerHTML = `
+        <p><strong>Likelihood:</strong> ${reportData.likelihood}</p>
+      `;
+
+      document.getElementById('impact-analysis').innerHTML = `
+        <p><strong>Impact:</strong> ${reportData.impact}</p>
+      `;
+
+      document.getElementById('risk-determination').innerHTML = reportData.risks.map(risk => `
+        <p><strong>Risk:</strong> ${risk.description}, <strong>Level:</strong> ${risk.level}</p>
+      `).join('');
+
+      document.getElementById('control-recommendations').innerHTML = reportData.recommendations.map(rec => `
+        <p><strong>Recommendation:</strong> ${rec.name}, <strong>Justification:</strong> ${rec.justification}</p>
+      `).join('');
     }
+
+    function exportPDF() {
+      alert('PDF export functionality would go here');
+    }
+
+    function exportCSV() {
+      alert('CSV export functionality would go here');
+    }
+
+    function submitReport() {
+      alert('Report submitted successfully!');
+      window.location.href = 'home.html';
+    }
+
+    // Initialize report
+    populateReport();
   </script>
 </body>
 </html>
